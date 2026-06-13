@@ -17,7 +17,7 @@ pincel.strokeStyle = "black";
 async function iniciarIA() {
     salidaResultado.innerText = "Cargando IA...";
     try {
-        redNeuronal = await tf.loadLayersModel('../../modelo_web/model.json');
+        redNeuronal = await tf.loadLayersModel('../modelo_web/model.json');
         salidaResultado.innerText = "-";
         console.log("Modelo cargado correctamente");
     } catch (err) {
